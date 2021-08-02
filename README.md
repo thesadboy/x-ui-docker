@@ -6,7 +6,7 @@ x-ui 使用说明：https://github.com/sprov065/x-ui/blob/main/README.md
 
 ### Docker版本说明
 
-拉取镜像：`docker push thesadboy/x-ui`
+拉取镜像：`docker pull thesadboy/x-ui`
 
 创建容器：`docker run --restart=always --name x-ui -d -p 54321:54321 -p 8000-8010:8000-8010/tcp -p 8000-8010:8000-8010/udp --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v /你的数据存放路径(最好是绝对路径):/etc/x-ui thesadboy/x-ui`
 
